@@ -34,8 +34,11 @@ const LocationSchema = mongoose.Schema({
 
 LocationSchema.method('update', function (updates, callback) {
   const location = this;
-  if (updates.updateSubLocation) Object.assign(location, { subLocations: [...this.subLocations, updates.subLocation] });
-  else {
+  if (updates.updateSubLocation) {
+      Object.assign(location, { 
+          subLocations: [...this.subLocations, updates.subLocation] 
+      })
+    } else {
     Object.assign(location, updates)
   }
   location.save(callback);

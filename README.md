@@ -66,7 +66,7 @@ Send a `POST` request with the location details to the url below replacing `:loc
 with the location id.
 
 ```angular2html
-/api/v1/add/sub/location/:location_id
+/api/v1/location/:location_id/sub
 ```
 
 ## Get a location with its sub locations
