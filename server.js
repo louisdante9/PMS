@@ -32,6 +32,6 @@ app.use(errorHandler);
 
 
 //start server
-const server = app.listen(port, (err) => !err ? console.log(`app pop running on port ${port}`) : console.log(err));
+const server = app.listen(port, (err) => !err ? console.log(`app PMS running on port ${port}`) : console.log(err));
 
 module.exports = server;
